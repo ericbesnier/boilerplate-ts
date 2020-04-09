@@ -9,7 +9,7 @@ import {
 } from '../interfaces/boilerplateInterfaces';
 import {HomeOutScreenProps} from '../types/propsTypes';
 
-// c l a s s   H o m e I n S c r e e n
+// c l a s s   H o m e O u t S c r e e n
 // -----------------------------------
 class HomeOutScreen extends Component<Props, IApplicationState> {
   render() {

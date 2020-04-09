@@ -2,13 +2,13 @@ import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabase('db.db');
 
-// S t o r a g e A p i - s q l i t e
-// ---------------------------------
+// c l a s s   S t o r a g e A p i
+// -------------------------------
 class StorageApi {
   constructor() {
     this.createSqlitePicturesTable();
     // this.dropSqlitePicturesTable();
-    this.deleteAll();
+    // this.deleteAll();
   }
 
   createSqlitePicturesTable = async () => {
@@ -48,7 +48,7 @@ class StorageApi {
       );
     });
   };
-  
+
   deleteAll = async () => {
     console.log(
       'StorageApi/deleteAll -----------------------------> A SUPPRIMER < ------------------------------------------',
@@ -103,7 +103,10 @@ class StorageApi {
     });
   };
 
-  _addSqliteItem = async (tx: SQLite.SQLTransaction, base64imageOrUri: string) => {
+  _addSqliteItem = async (
+    tx: SQLite.SQLTransaction,
+    base64imageOrUri: string,
+  ) => {
     // console.log('StorageApi/_addSqliteItem: base64imageOrUri=', base64imageOrUri);
     tx.executeSql(
       'insert into pictures (base64imageOrUri) values (?)',
@@ -121,8 +124,8 @@ class StorageApi {
       'select * from pictures',
       [],
       (_: any, resultSet: any) => resolve(resultSet),
-      this.SQLTransactionErrorCallback
-      )
+      this.SQLTransactionErrorCallback,
+    );
   };
 
   _removeSqlite = async (tx: SQLite.SQLTransaction, id: number) => {
@@ -135,10 +138,15 @@ class StorageApi {
   };
 
   _deleteAllSqlite = async (tx: SQLite.SQLTransaction) => {
-    tx.executeSql('delete from pictures', [], undefined, this.SQLTransactionErrorCallback);
+    tx.executeSql(
+      'delete from pictures',
+      [],
+      undefined,
+      this.SQLTransactionErrorCallback,
+    );
   };
 
-SQLTransactionErrorCallback = (
+  SQLTransactionErrorCallback = (
     tx: SQLite.SQLTransaction,
     error: SQLite.SQLError,
   ): boolean => {

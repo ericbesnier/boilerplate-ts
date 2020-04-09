@@ -1,4 +1,4 @@
-/// <reference path="./src/interfaces/boilerplateInterfaces.tsx" />
+/// <reference path="../src/interfaces/boilerplateInterfaces.tsx" />
 console.log('Root...');
 import React, {Component} from 'react';
 import {connect, ConnectedProps} from 'react-redux';
@@ -8,31 +8,31 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Asset} from 'expo-asset';
 const AssetUtils = require('expo-asset-utils');
 
-import LoadingScreen from './src/commons/LoadingScreen';
+import LoadingScreen from './commons/LoadingScreen';
 import {
   addPicture as _addPicture,
   setPictureAsInitialized as _setPictureAsInitialized,
   fetchAllPicture as _fetchAllPicture,
-} from './src/picture/PictureActions';
-import SignOutScreen from './src/user/SignOutScreen';
-import SignInScreen from './src/user/SignInScreen';
-import HomeInScreen from './src/user/HomeInScreen';
-import HomeOutScreen from './src/user/HomeOutScreen';
-import PictureSelectorScreen from './src/picture/PictureSelectorScreen';
-import PictureCameraScreen from './src/picture/PictureCameraScreen';
+} from './picture/PictureActions';
+import SignOutScreen from './user/SignOutScreen';
+import SignInScreen from './user/SignInScreen';
+import HomeInScreen from './user/HomeInScreen';
+import HomeOutScreen from './user/HomeOutScreen';
+import PictureSelectorScreen from './picture/PictureSelectorScreen';
+import PictureCameraScreen from './picture/PictureCameraScreen';
 import {
   IUserState,
   IPicturesState,
-} from './src/interfaces/boilerplateInterfaces';
+} from './interfaces/boilerplateInterfaces';
 import {FluxStandardAction} from 'redux-promise-middleware';
 
 const Stack = createStackNavigator();
 
 const imagesArray = [
-  require('./assets/images/1.jpg'),
-  require('./assets/images/2.jpg'),
-  require('./assets/images/3.jpg'),
-  require('./assets/images/4.jpg'),
+  require('../assets/images/1.jpg'),
+  require('../assets/images/2.jpg'),
+  require('../assets/images/3.jpg'),
+  require('../assets/images/4.jpg'),
 ];
 
 // c l a s s   R o o t

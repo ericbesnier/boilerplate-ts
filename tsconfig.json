@@ -7,10 +7,13 @@
     "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strict": true,
-    "pretty": true,
+    "strict": false,
+    "pretty": true
   },
-  "files": [
-    "./typings/index.d.ts",
-  ]
+  "typedocOptions": {
+    "out": "docs",
+    "mode": "modules",
+    "exclude": ["node_modules"]
+  },
+  "files": ["./typings/index.d.ts"]
 }

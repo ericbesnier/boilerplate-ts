@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BOILERPLATE</title>
+	<meta name="description" content="Documentation for BOILERPLATE">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">BOILERPLATE</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>BOILERPLATE</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#cahier-des-charges" id="cahier-des-charges" style="color: inherit; text-decoration: none;">
+					<h1>Cahier des charges</h1>
+				</a>
+				<p>Le client nous demande d’implémenter les choses suivantes :</p>
+				<ul>
+					<li>Une partie non authentifiée</li>
+					<li>Une authentification sur leurs services</li>
+					<li>Une gestion hors ligne des données</li>
+				</ul>
+				<p>Nous attendons de vous des axes d’amélioration appuyés sur des remarques constructives.
+				Par exemple :</p>
+				<ul>
+					<li>Conventions</li>
+					<li>Architecture</li>
+					<li>Choix techniques</li>
+					<li>Dépendances</li>
+					<li>Implémentation de TypeScript</li>
+				</ul>
+				<hr>
+				<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
+					<h1>Introduction</h1>
+				</a>
+				<ul>
+					<li>Partant du prototype fourni, j&#39;ai choisi d&#39;implémenter une application permettant de consulter (via une liste déroulante), d&#39;ajouter, de créer et de supprimer des images. </li>
+					<li>L&#39;écran d&#39;accueil permet uniquement de consulter les vignettes et de se logger via un formulaire. Quelques images sont chargées à l&#39;initialisation de l&#39;application.</li>
+					<li>Après le login, l&#39;utilisateur est dirigé vers un écran lui permettant de consulter les vignettes, de les supprimer, d&#39;en ajouter à partir du catalogue du mobile et d&#39;en créer via l&#39;appareil photo.</li>
+				</ul>
+				<hr>
+				<a href="#conventions" id="conventions" style="color: inherit; text-decoration: none;">
+					<h1>Conventions</h1>
+				</a>
+				<a href="#améliorations" id="améliorations" style="color: inherit; text-decoration: none;">
+					<h2>Améliorations</h2>
+				</a>
+				<ul>
+					<li>Corriger les warnings ESLINT qui garantissent le respect des conventions de codage et la qualité du code : point-virgule, double guillemets, tabulations, etc.</li>
+					<li>S’assurer que l’ensemble de la team utilise la même configuration.</li>
+					<li>Respecter la règle suivante : un nom de dossier et de sous-dossier doit toujours commencer par des petites lettres et les fichiers appartiennent aux dossiers est toujours en Pascal case (exemple: modifier  le dossier ‘Homepage’ en ‘homepage’, le fichier ‘rootreduceur.ts’ en ‘RootReducer.ts’).</li>
+					<li>S’assurer que composants, fichiers, noms de classes ⇒ Pascal case ( les mots sont liés sans espace. Chaque mot commence par une Majuscule).</li>
+					<li>S’assurer que déclaration d&#39;objet, variables ⇒ Camel case (les mots sont liés sans espace. Chaque mot commence par une majuscule à l’exception du premier.).</li>
+					<li>Effectuer un refactoring quand c’est nécessaire ⇒  ES6 (ES2015).</li>
+				</ul>
+				<hr>
+				<a href="#architecture" id="architecture" style="color: inherit; text-decoration: none;">
+					<h1>Architecture</h1>
+				</a>
+				<a href="#arborescence" id="arborescence" style="color: inherit; text-decoration: none;">
+					<h2>Arborescence</h2>
+				</a>
+				<p>L&#39;arborescence de l&#39;application est relativement plate, ce qui me semble plus simple à gérer.</p>
+				<ul>
+					<li>Sous ./src, j&#39;ai créé :<ul>
+							<li>un dossier pour chaque &#39;objet&#39; applicatif géré : user &amp; picture. Ils contiennent, par dossier, les écrans, les actions &amp; le reduceur relatifs à l&#39;objet géré. </li>
+							<li>les autres dossiers sont des dossiers &#39;techniques&#39;. Par exemple, redux gère l&#39;implémentation du store.</li>
+							<li>le fichier RootContainer.tsx instancie le store et le persistor et lance Root</li>
+							<li>le fichier Root.tsx gère la navigation et initialise les images, depuis les assets au 1er lancement de l&#39;application, puis de la base de données sqlite après.</li>
+							<li>un dossier api contient l&#39;interface de stockage et l&#39;interface du user qui permettrait la communication avec le serveur via axios par exemple. Elle contient les méthodes login/logout (simulées).</li>
+						</ul>
+					</li>
+					<li>Sous ./, on trouve classiquement, le lanceur le l&#39;application App.tsx et un dossier pour les assets.</li>
+				</ul>
+				<a href="#navigation" id="navigation" style="color: inherit; text-decoration: none;">
+					<h2>Navigation</h2>
+				</a>
+				<p>Pour la navigation, j&#39;ai utilisé le pattern communément appelé «Protected routes». Ici, les écrans qui nécessitent que l&#39;utilisateur soit connecté sont &quot;protégés&quot; et ne peuvent pas être consultés par d&#39;autres moyens si l&#39;utilisateur n&#39;est pas connecté.
+				Ce pattern est recommandé dans la documentation de React Navigation §&#39;Authentification Flow&#39; (cf. <a href="https://reactnavigation.org/docs/auth-flow/">https://reactnavigation.org/docs/auth-flow/</a>)</p>
+				<p>Nous pouvons accéder aux différents écrans en fonction de certaines conditions. Par exemple, si l&#39;utilisateur est connecté, nous pouvons accéder à Home, Profile, Settings, etc. Si l&#39;utilisateur n&#39;a pas signé, nous pouvons accéder aux écrans SignIn et SignUp.</p>
+				<p>Par exemple:</p>
+				<pre><code>isSignedIn ? (
+    <span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Stack.Screen</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Home"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{HomeScreen}</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Stack.Screen</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Profile"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{ProfileScreen}</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Stack.Screen</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Settings"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{SettingsScreen}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span>
+) : (
+    <span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Stack.Screen</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"SignIn"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{SignInScreen}</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Stack.Screen</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"SignUp"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{SignUpScreen}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span>
+)</code></pre><hr>
+				<a href="#choix-techniques" id="choix-techniques" style="color: inherit; text-decoration: none;">
+					<h1>Choix techniques</h1>
+				</a>
+				<ul>
+					<li>La principale divergence avec le prototype fourni est l&#39;utilisation de sqlite, plus adapté aux stockage d&#39;images que async-storage, notamment en terme de capacité de stockage.</li>
+				</ul>
+				<hr>
+				<a href="#principales-dépendances" id="principales-dépendances" style="color: inherit; text-decoration: none;">
+					<h1>Principales dépendances</h1>
+				</a>
+				<ul>
+					<li>expo : framework très pratique pour le prototypage d&#39;une application react-native avec son environnement de développement intégré et l&#39;accès aux fonctionnalités de l&#39;appareil :<ul>
+							<li>expo-camera : accès à l&#39;appareil photo</li>
+							<li>expo-image-picker : accès au catalogue du mobile</li>
+							<li>expo-sqlite : création de la base de données</li>
+						</ul>
+					</li>
+					<li>react / react-native / react-navigation : incontournable...</li>
+					<li>react-native-elements : la boîte à outil pour les écrans.</li>
+					<li>react-redux / redux : pour gérer la centralisation des données et des actions via le store.</li>
+					<li>redux-persist : pour la persistance du store. Uniquement utilisé présentement pour gérer l&#39;initialisation des images dans l&#39;application, mais pourrait également gérer la persistance du login ou autre.</li>
+					<li>redux-promise-middleware : pour réez des actions Redux avec type et payload standardisé. </li>
+					<li>redux-thunk : permet de gérer les actions redux de manière asynchrone.</li>
+				</ul>
+				<hr>
+				<a href="#implémentation-de-typescript" id="implémentation-de-typescript" style="color: inherit; text-decoration: none;">
+					<h1>Implémentation de TypeScript</h1>
+				</a>
+				<p>J&#39;ai choisi, dans un premier temps de développer l&#39;application en javascript, puis de la porter en typescript dans un deuxième temps.
+				Pour le portage, j&#39;ai :</p>
+				<ul>
+					<li>renommé les fichier en tsx</li>
+					<li>créé un dossier interface contenant les structures user, picture, pictures, application</li>
+					<li>créé un dossier type contenant la définition des types nécessaires à la navigation</li>
+					<li>pour chaque composant, j&#39;ai ajouté la définition des types nécessaires à redux</li>
+				</ul>
+				<hr>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h1>Documentation</h1>
+				</a>
+				<p>La documentation de l&#39;application est diponible sous docs/index.html</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_root_.html">&quot;<wbr>Root&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_rootcontainer_.html">&quot;<wbr>Root<wbr>Container&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_api_storageapi_.html">&quot;api/<wbr>Storage<wbr>Api&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_api_userapi_.html">&quot;api/<wbr>User<wbr>Api&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_commons_loadingscreen_.html">&quot;commons/<wbr>Loading<wbr>Screen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_constants_const_.html">&quot;constants/const&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_interfaces_boilerplateinterfaces_.html">&quot;interfaces/boilerplate<wbr>Interfaces&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_picture_pictureactions_.html">&quot;picture/<wbr>Picture<wbr>Actions&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_picture_picturecamerascreen_.html">&quot;picture/<wbr>Picture<wbr>Camera<wbr>Screen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_picture_picturereducer_.html">&quot;picture/<wbr>Picture<wbr>Reducer&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_picture_pictureselectorscreen_.html">&quot;picture/<wbr>Picture<wbr>Selector<wbr>Screen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_redux_store_.html">&quot;redux/<wbr>Store&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_types_propstypes_.html">&quot;types/props<wbr>Types&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_homeinscreen_.html">&quot;user/<wbr>Home<wbr>InScreen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_homeoutscreen_.html">&quot;user/<wbr>Home<wbr>Out<wbr>Screen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_signinscreen_.html">&quot;user/<wbr>Sign<wbr>InScreen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_signoutscreen_.html">&quot;user/<wbr>Sign<wbr>Out<wbr>Screen&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_useractions_.html">&quot;user/<wbr>User<wbr>Actions&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_user_userreducer_.html">&quot;user/<wbr>User<wbr>Reducer&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

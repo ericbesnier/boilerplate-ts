@@ -6,6 +6,8 @@ import {
   ActivityIndicatorProps,
 } from 'react-native';
 
+// L o a d i n g S c r e e n
+// -------------------------
 const LoadingScreen = (props: Props) => {
   const size = props.size || 'large';
   const color = props.color || 'gray';

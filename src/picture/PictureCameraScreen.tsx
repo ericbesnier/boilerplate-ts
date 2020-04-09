@@ -83,7 +83,7 @@ const mapDispatchToProps = (dispatch) => ({
   addPicture: (base64imageOrUri: string) => dispatch(_addPicture(base64imageOrUri)),
 });
 
-const connector = connect(mapDispatchToProps);
+const connector = connect(null, mapDispatchToProps);
 type PropsFromRedux = ConnectedProps<typeof connector>;
 type Props = PropsFromRedux & PictureCameraScreenProps ;
 type State = {

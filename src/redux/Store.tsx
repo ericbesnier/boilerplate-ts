@@ -5,12 +5,16 @@ import thunk from 'redux-thunk';
 import userReducer from '../user/UserReducer';
 import pictureReducer from '../picture/PictureReducer';
 
+/**
+ * reduxPromiseMiddleware : given a single action with an async payload, the middleware transforms 
+ * the action to a separate pending action and a separate fulfilled/rejected action, 
+ * Redux Thunk middleware allows you to write action creators that return a 
+ * function instead of an action.
+ * 
+ * Redux Thunk middleware : allows you to write action creators that return a function instead of an action.
+ */
 const middlewares = [
-  // Given a single action with an async payload, the middleware transforms 
-  // the action to a separate pending action and a separate fulfilled/rejected action, 
-  // representing the states of the async action.
   reduxPromiseMiddleware,
-  // Redux Thunk middleware allows you to write action creators that return a function instead of an action.
   thunk,
 ];
 
@@ -26,9 +30,9 @@ export default () => {
     applyMiddleware(...middlewares),
   );
   const persistor = persistStore(store);
-  if (persistor) {
-    console.log('Store/RootReducer: persistStore  -----------------------------> A SUPPRIMER < ------------------------------------------');
-    persistor.purge();
-  }
+  // if (persistor) {
+  //   console.log('Store/RootReducer: persistStore  -----------------------------> A SUPPRIMER < ------------------------------------------');
+  //   persistor.purge();
+  // }
   return { store, persistor };
 };

@@ -33,7 +33,7 @@ class PictureSelectorScreen extends Component<Props, State> {
     });
     // console.log('PictureSelectorScreen/render: uri=', result.uri);
     if (!result.cancelled) {
-      // this.props.addPicture(result.uri);
+      this.props.addPicture(result.uri);
     }
   };
 
@@ -64,7 +64,7 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(_addPicture(base64imageOrUri)),
 });
 
-const connector = connect(mapDispatchToProps);
+const connector = connect(null, mapDispatchToProps);
 type PropsFromRedux = ConnectedProps<typeof connector>;
 type Props = PropsFromRedux &
   PictureSelectorScreenProps & {
