@@ -87,7 +87,7 @@
 					<h1>Introduction</h1>
 				</a>
 				<ul>
-					<li>Partant du prototype fourni, j&#39;ai choisi d&#39;implémenter une application permettant de consulter (via une liste déroulante), d&#39;ajouter, de créer et de supprimer des images. </li>
+					<li>Partant du prototype fourni, j&#39;ai choisi d&#39;implémenter une application permettant de consulter (via une liste déroulante), d&#39;ajouter, de créer et de supprimer des images.</li>
 					<li>L&#39;écran d&#39;accueil permet uniquement de consulter les vignettes et de se logger via un formulaire. Quelques images sont chargées à l&#39;initialisation de l&#39;application.</li>
 					<li>Après le login, l&#39;utilisateur est dirigé vers un écran lui permettant de consulter les vignettes, de les supprimer, d&#39;en ajouter à partir du catalogue du mobile et d&#39;en créer via l&#39;appareil photo.</li>
 				</ul>
@@ -101,10 +101,10 @@
 				<ul>
 					<li>Corriger les warnings ESLINT qui garantissent le respect des conventions de codage et la qualité du code : point-virgule, double guillemets, tabulations, etc.</li>
 					<li>S’assurer que l’ensemble de la team utilise la même configuration.</li>
-					<li>Respecter la règle suivante : un nom de dossier et de sous-dossier doit toujours commencer par des petites lettres et les fichiers appartiennent aux dossiers est toujours en Pascal case (exemple: modifier  le dossier ‘Homepage’ en ‘homepage’, le fichier ‘rootreduceur.ts’ en ‘RootReducer.ts’).</li>
+					<li>Respecter la règle suivante : un nom de dossier et de sous-dossier doit toujours commencer par des petites lettres et les fichiers appartiennent aux dossiers est toujours en Pascal case (exemple: modifier le dossier ‘Homepage’ en ‘homepage’, le fichier ‘rootreduceur.ts’ en ‘RootReducer.ts’).</li>
 					<li>S’assurer que composants, fichiers, noms de classes ⇒ Pascal case ( les mots sont liés sans espace. Chaque mot commence par une Majuscule).</li>
 					<li>S’assurer que déclaration d&#39;objet, variables ⇒ Camel case (les mots sont liés sans espace. Chaque mot commence par une majuscule à l’exception du premier.).</li>
-					<li>Effectuer un refactoring quand c’est nécessaire ⇒  ES6 (ES2015).</li>
+					<li>Effectuer un refactoring quand c’est nécessaire ⇒ ES6 (ES2015).</li>
 				</ul>
 				<hr>
 				<a href="#architecture" id="architecture" style="color: inherit; text-decoration: none;">
@@ -116,7 +116,7 @@
 				<p>L&#39;arborescence de l&#39;application est relativement plate, ce qui me semble plus simple à gérer.</p>
 				<ul>
 					<li>Sous ./src, j&#39;ai créé :<ul>
-							<li>un dossier pour chaque &#39;objet&#39; applicatif géré : user &amp; picture. Ils contiennent, par dossier, les écrans, les actions &amp; le reduceur relatifs à l&#39;objet géré. </li>
+							<li>un dossier pour chaque &#39;objet&#39; applicatif géré : user &amp; picture. Ils contiennent, par dossier, les écrans, les actions &amp; le reduceur relatifs à l&#39;objet géré.</li>
 							<li>les autres dossiers sont des dossiers &#39;techniques&#39;. Par exemple, redux gère l&#39;implémentation du store.</li>
 							<li>le fichier RootContainer.tsx instancie le store et le persistor et lance Root</li>
 							<li>le fichier Root.tsx gère la navigation et initialise les images, depuis les assets au 1er lancement de l&#39;application, puis de la base de données sqlite après.</li>
@@ -165,7 +165,7 @@
 					<li>react-native-elements : la boîte à outil pour les écrans.</li>
 					<li>react-redux / redux : pour gérer la centralisation des données et des actions via le store.</li>
 					<li>redux-persist : pour la persistance du store. Uniquement utilisé présentement pour gérer l&#39;initialisation des images dans l&#39;application, mais pourrait également gérer la persistance du login ou autre.</li>
-					<li>redux-promise-middleware : pour réez des actions Redux avec type et payload standardisé. </li>
+					<li>redux-promise-middleware : pour réez des actions Redux avec type et payload standardisé.</li>
 					<li>redux-thunk : permet de gérer les actions redux de manière asynchrone.</li>
 				</ul>
 				<hr>
@@ -184,7 +184,11 @@
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h1>Documentation</h1>
 				</a>
-				<p>La documentation de l&#39;application est diponible sous docs/index.html</p>
+				<p>L&#39;ensemble de la documentation de l&#39;application est diponible sur <a href="http://deepfocus.fr">http://deepfocus.fr</a></p>
+				<a href="#application" id="application" style="color: inherit; text-decoration: none;">
+					<h1>Application</h1>
+				</a>
+				<p>L&#39;application est téléchargeable sur <a href="https://expo.io/@ericbesnier/boilerplate-ts">https://expo.io/@ericbesnier/boilerplate-ts</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

@@ -19,7 +19,10 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "assets/*",
+      "assets/images/*",
+      "assets/icons/*",
+      "assets/sounds/*"
     ],
     "ios": {
       "supportsTablet": true,
@@ -29,6 +32,8 @@
     "android": {
       "package": "com.deepfocus.boilerplate",
       "versionCode": 1
-    }
+    },
+    "description": "boilerplate pour onepoint",
+    "githubUrl": "https://github.com/ericbesnier/boilerplate-ts"
   }
 }

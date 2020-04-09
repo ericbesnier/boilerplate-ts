@@ -1,4 +1,3 @@
-/// <reference path="../src/interfaces/boilerplateInterfaces.tsx" />
 console.log('Root...');
 import React, {Component} from 'react';
 import {connect, ConnectedProps} from 'react-redux';
