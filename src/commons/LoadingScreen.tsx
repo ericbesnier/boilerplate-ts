@@ -6,8 +6,11 @@ import {
   ActivityIndicatorProps,
 } from 'react-native';
 
-// L o a d i n g S c r e e n
-// -------------------------
+/**
+ * * L o a d i n g S c r e e n
+ * 
+ * Ecran permettant l'affichage d'un indicateur de chargement circulaire avec un message
+ */
 const LoadingScreen = (props: Props) => {
   const size = props.size || 'large';
   const color = props.color || 'gray';

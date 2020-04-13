@@ -2,8 +2,15 @@ import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabase('db.db');
 
-// c l a s s   S t o r a g e A p i
-// -------------------------------
+/**
+ * * c l a s s   S t o r a g e A p i
+ * 
+ * Cette classe implémente l'api de stockage de l'application
+ * Elle repose sur l'utilisation d'une base de données sqlite
+ * Elle permet de créer les tables
+ * Elle permet drop les tables
+ * Elle implémente les méthodes CRUD
+ */
 class StorageApi {
   constructor() {
     this.createSqlitePicturesTable();

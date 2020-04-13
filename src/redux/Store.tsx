@@ -6,12 +6,13 @@ import userReducer from '../user/UserReducer';
 import pictureReducer from '../picture/PictureReducer';
 
 /**
- * reduxPromiseMiddleware : given a single action with an async payload, the middleware transforms 
- * the action to a separate pending action and a separate fulfilled/rejected action, 
- * Redux Thunk middleware allows you to write action creators that return a 
- * function instead of an action.
+ * Implémentation du store redux
  * 
- * Redux Thunk middleware : allows you to write action creators that return a function instead of an action.
+ * Utilisation de :
+ * - reduxPromiseMiddleware : transforme l'action vers une action distincte 'en attente' (pending)
+ *   et une action distincte 'exécutée' (fulfilled) ou 'rejetée' (rejected).
+ * - Redux Thunk middleware : permet d'écrire des créateurs d'actions 
+ *   qui renvoient une fonction au lieu d'une action.
  */
 const middlewares = [
   reduxPromiseMiddleware,

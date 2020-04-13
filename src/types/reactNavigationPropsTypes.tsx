@@ -1,6 +1,9 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 
+/**
+ * Définition des types de react-navigation
+ */
 export type RootStackParamList = {
   HomeInScreen: undefined;
   HomeOutScreen: undefined;

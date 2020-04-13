@@ -6,10 +6,15 @@ import * as Permissions from 'expo-permissions';
 import styled from 'styled-components/native';
 import {Audio} from 'expo-av';
 import {addPicture as _addPicture} from './PictureActions';
-import {PictureCameraScreenProps} from '../types/propsTypes';
+import {PictureCameraScreenProps} from '../types/reactNavigationPropsTypes';
 
-// c l a s s   P i c t u r e C a m e r a S c r e e n
-// -------------------------------------------------
+/**
+ * * c l a s s   P i c t u r e C a m e r a S c r e e n
+ * 
+ * Ecran permettant de prendre une photo et de la sauvegarder
+ * dans la base de données
+ */
+
 class PictureCameraScreen extends Component<Props, State> {
   camera: Camera;
 

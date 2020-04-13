@@ -3,8 +3,12 @@ console.log('................... Lancement de l\'application ...................
 console.log('*******************************************************************');
 var shortid = require('shortid');
 
-// U s e r A p i
-// -------------
+/**
+ * * U s e r A p i
+ * 
+ * cette classe implémente l'api de l'application concernant l'utilisateur
+ * elle implémente les requètes login et logout
+ */
 class UserApi {
   constructor() {
   }

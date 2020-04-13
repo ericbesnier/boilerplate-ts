@@ -7,6 +7,10 @@ import {
 } from '../constants/const';
 import {FluxStandardAction} from 'redux-promise-middleware';
 
+/**
+ * Implémentation des actions pour le reducer Picture
+ */
+
 export const setPictureAsInitialized = (isDone: boolean) => {
   console.log('PictureAction/setPictureAsInitialized: isDone=', isDone);
   return {

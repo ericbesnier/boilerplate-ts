@@ -1,6 +1,9 @@
 import { USER_API } from '../api/UserApi';
 import { LOGIN, LOGOUT } from '../constants/const';
 
+/**
+ * Définitions des actions pour le reducer Picture
+ */
 export const login = (email: string, password: string) => {
   console.log('UserActions/login');
   return {

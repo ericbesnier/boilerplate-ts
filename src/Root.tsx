@@ -34,8 +34,12 @@ const imagesArray = [
   require('../assets/images/4.jpg'),
 ];
 
-// c l a s s   R o o t
-// -------------------
+/**
+ * * c l a s s   R o o t
+ * 
+ * Initialise les images de l'application
+ * Gère la navigation de l'application
+ */
 class Root extends Component<Props, State> {
   constructor(props: Props) {
     super(props);

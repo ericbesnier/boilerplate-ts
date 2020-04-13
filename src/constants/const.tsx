@@ -1,3 +1,9 @@
+/**
+ * Défintion des constantes aux actions & reducers :
+ * user
+ * picture
+ */
+
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
 

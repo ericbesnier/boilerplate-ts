@@ -8,8 +8,13 @@ import LoadingScreen from './commons/LoadingScreen';
 
 export const {store, persistor} = createStore();
 
-// R o o t C o n t a i n e r
-// -------------------------
+/**
+ * * R o o t C o n t a i n e r
+ * 
+ * Charge le store et le persistor
+ * et appel le composant root
+ * 
+ */
 export default function RootContainer() {
   return (
     <Provider store={store}>

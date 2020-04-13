@@ -5,10 +5,13 @@ import {Button, Card} from 'react-native-elements';
 import {logout as _logout} from './UserActions';
 import LoadingScreen from '../commons/LoadingScreen';
 import {IUserState, IApplicationState} from '../interfaces/boilerplateInterfaces';
-import {SignOutScreenProps} from '../types/propsTypes';
+import {SignOutScreenProps} from '../types/reactNavigationPropsTypes';
 
-// c l a s s   S i g n O u t S c r e e n
-// -------------------------------------
+/**
+ * * c l a s s   S i g n O u t S c r e e n
+ * 
+ * Ce composant permet à l'utilisateur de se déconnecter de l'application
+ */
 class SignOutScreen extends Component<Props, IApplicationState> {
   render() {
     const {logout, userState} = this.props;

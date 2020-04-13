@@ -10,6 +10,9 @@ import {
 } from '../constants/const';
 import {IPicturesState} from '../interfaces/boilerplateInterfaces'
 
+/**
+ * Implémentation du reducer Picture
+ */
 const INITIAL_STATE: IPicturesState = {
   pictures: [],
   isInitialized: false,

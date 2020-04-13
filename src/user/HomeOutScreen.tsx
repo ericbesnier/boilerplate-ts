@@ -7,10 +7,14 @@ import {
   IPicturesState,
   IApplicationState,
 } from '../interfaces/boilerplateInterfaces';
-import {HomeOutScreenProps} from '../types/propsTypes';
+import {HomeOutScreenProps} from '../types/reactNavigationPropsTypes';
 
-// c l a s s   H o m e O u t S c r e e n
-// -----------------------------------
+/**
+ * * c l a s s   H o m e O u t S c r e e n
+ * 
+ * Ecran d'accueil de l'application quand l'utilisateur n'est pas logger
+ * Affiche une liste déroulante d'image
+ */
 class HomeOutScreen extends Component<Props, IApplicationState> {
   render() {
     const {picturesState} = this.props;

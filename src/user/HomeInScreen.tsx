@@ -9,7 +9,7 @@ import {
   IPicture,
   IApplicationState,
 } from '../interfaces/boilerplateInterfaces';
-import {HomeInScreenProps} from '../types/propsTypes';
+import {HomeInScreenProps} from '../types/reactNavigationPropsTypes';
 
 const actions: Array<IActionProps> = [
   {
@@ -24,8 +24,12 @@ const actions: Array<IActionProps> = [
   },
 ];
 
-// c l a s s   H o m e I n S c r e e n
-// -----------------------------------
+/**
+ * * c l a s s   H o m e I n S c r e e n
+ * 
+ * Ecran d'accueil de l'application quand l'utilisateur est logger
+ * Affiche une liste déroulante d'image
+ */
 class HomeInScreen extends Component<Props, IApplicationState> {
   render() {
     const {navigation, picturesState} = this.props;

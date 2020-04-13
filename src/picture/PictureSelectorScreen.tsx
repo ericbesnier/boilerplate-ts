@@ -5,11 +5,14 @@ import * as ImagePicker from 'expo-image-picker';
 import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
 import {addPicture as _addPicture} from './PictureActions';
-import {PictureSelectorScreenProps} from '../types/propsTypes';
+import {PictureSelectorScreenProps} from '../types/reactNavigationPropsTypes';
 import {IUserState} from '../interfaces/boilerplateInterfaces';
-
-// c l a s s   P i c t u r e S e l e c t o r S c r e e n
-// -----------------------------------------------------
+/**
+ * * c l a s s   P i c t u r e S e l e c t o r S c r e e n
+ * 
+ * Ecran permettant de sélectionner une image dans les dossiers du mobile
+ * et de la sauvegarder dans la base de données
+ */
 class PictureSelectorScreen extends Component<Props, State> {
   readonly state = {
     image: undefined,

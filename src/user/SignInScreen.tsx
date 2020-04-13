@@ -5,10 +5,13 @@ import {Button, Card, Input} from 'react-native-elements';
 import {login as _login} from './UserActions';
 import LoadingScreen from '../commons/LoadingScreen';
 import {IUserState} from '../interfaces/boilerplateInterfaces';
-import {SignInScreenProps} from '../types/propsTypes';
+import {SignInScreenProps} from '../types/reactNavigationPropsTypes';
 
-// c l a s s   S i g n I n S c r e e n
-// -----------------------------------
+/**
+ * * c l a s s   S i g n I n S c r e e n
+ * 
+ * Ce composant permet à l'utilisateur de saisir son email et son mot de passe afin de se connecter à l'application
+ */
 class SignInScreen extends Component<Props, State> {
   state = {
     email: '',
