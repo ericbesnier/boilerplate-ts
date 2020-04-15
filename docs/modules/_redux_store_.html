@@ -88,7 +88,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Reducers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol"> = combineReducers({userState: userReducer,picturesState: pictureReducer,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ericbesnier/boilerplate-ts/blob/e142e57/src/redux/Store.tsx#L21">src/redux/Store.tsx:21</a></li>
+							<li>Defined in <a href="https://github.com/ericbesnier/boilerplate-ts/blob/227a75b/src/redux/Store.tsx#L22">src/redux/Store.tsx:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -122,17 +122,20 @@
 					<div class="tsd-signature tsd-kind-icon">middlewares<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Middleware</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyAction</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [reduxPromiseMiddleware,thunk,]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ericbesnier/boilerplate-ts/blob/e142e57/src/redux/Store.tsx#L16">src/redux/Store.tsx:16</a></li>
+							<li>Defined in <a href="https://github.com/ericbesnier/boilerplate-ts/blob/227a75b/src/redux/Store.tsx#L17">src/redux/Store.tsx:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>reduxPromiseMiddleware : given a single action with an async payload, the middleware transforms
-								the action to a separate pending action and a separate fulfilled/rejected action,
-								Redux Thunk middleware allows you to write action creators that return a
-							function instead of an action.</p>
+							<p>Implémentation du store redux</p>
 						</div>
-						<p>Redux Thunk middleware : allows you to write action creators that return a function instead of an action.</p>
+						<p>Utilisation de :</p>
+						<ul>
+							<li>reduxPromiseMiddleware : transforme l&#39;action vers une action distincte &#39;en attente&#39; (pending)
+							et une action distincte &#39;exécutée&#39; (fulfilled) ou &#39;rejetée&#39; (rejected).</li>
+							<li>Redux Thunk middleware : permet d&#39;écrire des créateurs d&#39;actions
+							qui renvoient une fonction au lieu d&#39;une action.</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -180,7 +183,7 @@
 						<a href="_redux_store_.html">&quot;redux/<wbr>Store&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_types_propstypes_.html">&quot;types/props<wbr>Types&quot;</a>
+						<a href="_types_reactnavigationpropstypes_.html">&quot;types/react<wbr>Navigation<wbr>Props<wbr>Types&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="_user_homeinscreen_.html">&quot;user/<wbr>Home<wbr>InScreen&quot;</a>
